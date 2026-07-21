@@ -23,7 +23,7 @@ export default function Footer() {
           </p>
           <div className="mt-6 flex gap-3">
             {[FiInstagram].map((Icon, i) => (
-              <a key={i} href="#" aria-label="social" className="magnetic grid h-10 w-10 place-items-center rounded-full border border-light-line text-light-text transition-colors hover:border-brand hover:text-brand dark:border-dark-line dark:text-white">
+              <a key={i} href="https://www.instagram.com/elevik_solutions" aria-label="social" className="magnetic grid h-10 w-10 place-items-center rounded-full border border-light-line text-light-text transition-colors hover:border-brand hover:text-brand dark:border-dark-line dark:text-white">
                 <Icon />
               </a>
             ))}
@@ -51,10 +51,10 @@ export default function Footer() {
         <div className="footer-col">
           <h4 className="mb-4 font-display text-sm font-semibold uppercase tracking-wider text-light-muted dark:text-dark-muted">Get in touch</h4>
           <a href="mailto:hello@eleviksolutions.com" className="flex items-center gap-2 text-sm text-light-text transition-colors hover:text-brand dark:text-dark-accent">
-            <FiMail /> hello@eleviksolutions.com
+            <FiMail /> eleviksolutions@gmail.com
           </a>
           <a href="tel:+910000000000" className="mt-3 flex items-center gap-2 text-sm text-light-text transition-colors hover:text-brand dark:text-dark-accent">
-            <FiPhone /> +91 00000 00000
+            <FiPhone /> +91 72082 27807
           </a>
         </div>
       </div>

@@ -8,12 +8,12 @@ import MagneticButton from "../ui/MagneticButton.jsx";
 
 // Edit these once — everything on the page reads from here.
 const CONTACT = {
-  email: "hello@eleviksolutions.com",
-  phone: "+91 00000 00000",
-  phoneHref: "tel:+910000000000",
-  whatsapp: "https://wa.me/910000000000",
-  location: "Serving clients across India & worldwide",
-  hours: "Mon – Sat · 10:00 AM – 7:00 PM IST",
+  email: "eleviksolutions@gmail.com",
+  phone: "+91 72082 27807",
+  phoneHref: "tel:+917208227807",
+  whatsapp: "https://wa.me/917208227807",
+  location: "Serving clients across India",
+  hours: "Mon – Sat · 10:00 AM – 11:00 PM IST",
 };
 
 const METHODS = [
@@ -72,7 +72,7 @@ export default function Contact() {
             </MagneticButton>
             <div className="flex gap-3">
               {[
-                { icon: FaInstagram, href: "https://instagram.com/eleviksolutions" }
+                { icon: FaInstagram, href: "https://www.instagram.com/elevik_solutions" }
               ].map((s, i) => (
                 <a
                   key={i}
