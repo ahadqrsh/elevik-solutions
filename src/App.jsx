@@ -52,8 +52,8 @@ export default function App() {
           <Services />
           <WhyChooseUs />
           <Process />
-          <Portfolio />
           <Pricing />
+          <Portfolio />
           <Contact />
           <Footer />
         </Suspense>
