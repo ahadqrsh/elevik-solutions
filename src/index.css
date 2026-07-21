@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  color: #111827;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark body {
+  background: #09090b;
+  color: #ffffff;
+}
+
+/* Smooth theme transition across the whole tree */
+.theme-transition,
+.theme-transition * {
+  transition: background-color 0.5s ease, border-color 0.5s ease,
+    color 0.5s ease, fill 0.5s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Hide default cursor on devices with a fine pointer (custom cursor active) */
+@media (pointer: fine) {
+  * { cursor: none; }
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.25);
+}
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(37, 99, 235, 0.4);
+  border-radius: 99px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #60a5fa 0%, #2563eb 60%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass {
+  background: rgba(248, 250, 252, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+}
+.dark .glass {
+  background: rgba(22, 27, 34, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
