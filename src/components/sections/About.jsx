@@ -44,10 +44,10 @@ export default function About() {
         ))}
       </div>
 
-      <div className="mx-auto mt-12 grid max-w-5xl grid-cols-2 gap-6 rounded-3xl border border-light-line bg-light-card p-8 dark:border-dark-line dark:bg-dark-card md:grid-cols-4 md:p-12">
+      <div className="mx-auto mt-12 grid max-w-5xl grid-cols-2 gap-4 rounded-3xl border border-light-line bg-light-card p-5 dark:border-dark-line dark:bg-dark-card sm:gap-6 sm:p-8 md:grid-cols-4 md:p-12">
         {STATS.map((s) => (
           <div key={s.label} className="text-center">
-            <p className="font-display text-4xl font-bold text-gradient md:text-5xl" data-count={s.value} data-suffix={s.suffix}>0{s.suffix}</p>
+            <p className="font-display text-3xl font-bold text-gradient sm:text-4xl md:text-5xl" data-count={s.value} data-suffix={s.suffix}>0{s.suffix}</p>
             <p className="mt-2 text-xs font-medium uppercase tracking-wider text-light-muted dark:text-dark-muted md:text-sm">{s.label}</p>
           </div>
         ))}

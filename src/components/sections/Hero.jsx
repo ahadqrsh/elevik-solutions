@@ -38,7 +38,7 @@ export default function Hero() {
   );
 
   return (
-    <section id="home" ref={scope} className="relative flex min-h-screen items-center overflow-hidden px-5 pt-32 pb-12 md:px-8">
+    <section id="home" ref={scope} className="relative flex min-h-[100dvh] items-center overflow-hidden px-5 pt-32 pb-12 md:px-8">
       {/* Background glow */}
       <div className="hero-glow pointer-events-none absolute left-1/2 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-brand/25 blur-[130px]" />
       <div className="pointer-events-none absolute inset-0 bg-glow-radial opacity-70 dark:opacity-100" />
