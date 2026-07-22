@@ -7,8 +7,8 @@ import {
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
   { label: "Pricing", href: "#pricing" },
+  { label: "Portfolio", href: "#portfolio" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -84,3 +84,9 @@ export const PRICING = [
 
 export const SERVICE_OPTIONS = ["Website Development", "Shopify", "SEO", "Content Creation", "Instagram Management", "Meta Ads", "Photo / Video Shoot"];
 export const BUDGET_OPTIONS = ["Under ₹25k", "₹25k – ₹50k", "₹50k – ₹1L", "₹1L+"];
+export const WHATSAPP_NUMBER = "7208227807";
+export const WHATSAPP_MESSAGE =
+  "Hi Elevik! I'd like to know more about your services and plans.";
+export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+  WHATSAPP_MESSAGE
+)}`;

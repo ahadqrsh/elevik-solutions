@@ -14,6 +14,11 @@
 
 html {
   -webkit-font-smoothing: antialiased;
+  /* Must be on html AND body — Safari ignores overflow-x on body alone,
+     which is what caused the sideways shift on iPhone/older Android. */
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -21,7 +26,21 @@ body {
   background: #ffffff;
   color: #111827;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
   transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Nothing may exceed the viewport width */
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Long words/emails can't force horizontal scroll on 360px screens */
+h1, h2, h3, p, a, li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .dark body {

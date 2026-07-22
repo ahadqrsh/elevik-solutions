@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import { gsap } from "gsap";
 import { heroAnimation } from "../../animations/heroAnimation.js";
-import { HERO_CARDS } from "../../utils/data.js";
+import { HERO_CARDS, WHATSAPP_LINK } from "../../utils/data.js";
 import MagneticButton from "../ui/MagneticButton.jsx";
 
 export default function Hero() {
@@ -38,17 +38,17 @@ export default function Hero() {
   );
 
   return (
-    <section id="home" ref={scope} className="relative flex min-h-[100dvh] items-center overflow-hidden px-5 pt-32 pb-12 md:px-8">
-      {/* Background glow */}
-      <div className="hero-glow pointer-events-none absolute left-1/2 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-brand/25 blur-[130px]" />
+    <section id="home" ref={scope} className="relative flex min-h-[100svh] items-center overflow-hidden px-5 pt-28 pb-12 sm:pt-32 md:px-8">
+      {/* Background glow — sized in vw on small screens so it can never exceed the viewport */}
+      <div className="hero-glow pointer-events-none absolute left-1/2 top-1/4 h-[70vw] w-[70vw] max-h-[500px] max-w-[500px] -translate-x-1/2 rounded-full bg-brand/25 blur-[130px]" />
       <div className="pointer-events-none absolute inset-0 bg-glow-radial opacity-70 dark:opacity-100" />
 
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]">
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
         <div>
           <span className="hero-cta mb-6 inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/5 px-4 py-1.5 font-display text-xs font-semibold uppercase tracking-wider text-brand">
             <span className="h-1.5 w-1.5 rounded-full bg-brand" /> Premium Digital Agency
           </span>
-          <h1 className="font-display text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-display text-[2rem] font-bold leading-[1.08] sm:text-5xl md:text-6xl lg:text-7xl">
             {line("We Build Digital")}
             {line(<>Experiences That</>)}
             {line(<span className="text-gradient">Drive Growth.</span>)}
@@ -57,7 +57,7 @@ export default function Hero() {
             Helping businesses grow with stunning websites, Shopify stores, SEO, content creation and performance marketing.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
-            <MagneticButton as="a" href="#contact" className="hero-cta">
+            <MagneticButton as="a" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hero-cta">
               Book Free Consultation <FiArrowRight />
             </MagneticButton>
             <MagneticButton as="a" href="#portfolio" variant="ghost" className="hero-cta">
