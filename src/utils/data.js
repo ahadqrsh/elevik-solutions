@@ -8,7 +8,8 @@ export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Portfolio", href: "#portfolio" },
+  // { label: "Portfolio", href: "#portfolio" },
+  { label: "Why Us", href: "#work-with-us" },
   { label: "Contact", href: "#contact" },
 ];
 

@@ -16,10 +16,11 @@ const About = lazy(() => import("./components/sections/About.jsx"));
 const Services = lazy(() => import("./components/sections/Services.jsx"));
 const WhyChooseUs = lazy(() => import("./components/sections/WhyChooseUs.jsx"));
 const Process = lazy(() => import("./components/sections/Process.jsx"));
-const Portfolio = lazy(() => import("./components/sections/Portfolio.jsx"));
+// const Portfolio = lazy(() => import("./components/sections/Portfolio.jsx"));
 const Pricing = lazy(() => import("./components/sections/Pricing.jsx"));
 const Contact = lazy(() => import("./components/sections/Contact.jsx"));
 const Footer = lazy(() => import("./components/layout/Footer.jsx"));
+const WorkWithUs = lazy(() => import("./components/sections/WorkWithUs.jsx"));
 
 export default function App() {
   useLenis();
@@ -53,7 +54,8 @@ export default function App() {
           <WhyChooseUs />
           <Process />
           <Pricing />
-          <Portfolio />
+          <WorkWithUs/>
+          {/* <Portfolio /> */}
           <Contact />
           <Footer />
         </Suspense>
