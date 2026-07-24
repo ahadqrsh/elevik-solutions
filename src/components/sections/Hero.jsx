@@ -60,9 +60,6 @@ export default function Hero() {
             <MagneticButton as="a" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hero-cta">
               Book Free Consultation <FiArrowRight />
             </MagneticButton>
-            <MagneticButton as="a" href="#portfolio" variant="ghost" className="hero-cta">
-              Explore Our Work <FiArrowUpRight />
-            </MagneticButton>
           </div>
         </div>
 

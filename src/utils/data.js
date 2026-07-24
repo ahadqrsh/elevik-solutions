@@ -21,13 +21,6 @@ export const HERO_CARDS = [
   { label: "Meta Ads", icon: FiTarget },
 ];
 
-export const STATS = [
-  { value: 120, suffix: "+", label: "Projects Delivered" },
-  { value: 65, suffix: "+", label: "Brands Scaled" },
-  { value: 98, suffix: "%", label: "Client Retention" },
-  { value: 5, suffix: "x", label: "Avg. ROAS Lift" },
-];
-
 export const SERVICES = [
   { icon: FiCode, title: "Website Development", desc: "Fast, accessible sites engineered in React and Next.js with a focus on Core Web Vitals." },
   { icon: FiShoppingBag, title: "Shopify Development", desc: "Conversion-first stores with custom themes, apps and checkout optimisation." },
